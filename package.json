@@ -7,17 +7,27 @@
   "license": "MIT",
   "contributors": [
     {
-      "fullname": "John Doe",
-      "username": "username1",
-      "studentId": "12345678"
+      "fullname": "ยศสรัล มั่นคงดี",
+      "username": "R4zym",
+      "studentId": "68010925"
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "studentId": "68010980"
+    },
+    {
+      "fullname": "",
+      "username": "",
+      "studentId": "68011047"
     }
   ],
   "project": {
     "model": {
-      "id": null,
-      "name": null
+      "id": "2",
+      "name": "Course Registration System"  
     },
-    "sumStudentId": null
+    "sumStudentId": 204032952
   },
   "scripts": {
     "build": "nest build",
@@ -38,6 +48,8 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.1.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
