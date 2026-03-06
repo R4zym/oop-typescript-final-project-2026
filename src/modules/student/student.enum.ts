@@ -1,12 +1,8 @@
-export enum studentSex {
-    MALE = "MALE",
-    FEMALE = "FEMALE",
-    OTHER = "OTHER"
+enum StudentStatus {
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    GRADUATED = 'GRADUATED',
+    SUSPENDED = 'SUSPENDED'
 }
 
-export enum studentStatus {
-    ACTIVE = "ACTIVE",
-    INACTIVE = "INACTIVE",
-    GRADUATED = "GRADUATED",
-    DROPPED_OUT = "DROPPED_OUT"
-}
+export default StudentStatus;
