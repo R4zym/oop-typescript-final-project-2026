@@ -1,6 +1,5 @@
-import { IsString, IsNotEmpty, IsEnum, IsOptional, MinLength } from 'class-validator';
+import { IsString, IsNotEmpty, IsEnum, IsNumber, Min, Max, IsOptional } from 'class-validator';
 
-// อ้างอิงจาก EnrollStatus ที่เราออกแบบไว้ก่อนหน้า
 export enum CourseStatus {
     OPEN = "OPEN",
     CLOSED = "CLOSED",
@@ -9,23 +8,24 @@ export enum CourseStatus {
 
 export class CreateCourseDto {
     @IsString()
-    @IsNotEmpty({ message: 'Course ID is required' })
-    @MinLength(3, { message: 'Course ID must be at least 3 characters long' })
-    courseId!: string; // เช่น CS101, PH102
+    @IsNotEmpty({ message: 'กรุณาระบุรหัสวิชา' })
+    courseId!: string;
 
     @IsString()
-    @IsNotEmpty({ message: 'Course name is required' })
-    courseName!: string; // เช่น Mathematics, Physics
+    @IsNotEmpty({ message: 'กรุณาระบุชื่อวิชา' })
+    courseName!: string;
+
+    @IsNumber()
+    @Min(1)
+    @Max(5)
+    @IsNotEmpty({ message: 'กรุณาระบุหน่วยกิต (1-5)' })
+    credits!: number;
 
     @IsString()
-    @IsOptional()
-    description?: string; // คำอธิบายวิชา (ถ้ามี)
+    @IsNotEmpty({ message: 'กรุณาระบุหมวดหมู่' })
+    category!: string;
 
-    @IsEnum(CourseStatus, { message: 'Invalid course status' })
+    @IsEnum(CourseStatus)
     @IsOptional()
-    status?: CourseStatus = CourseStatus.OPEN; // ค่าเริ่มต้นเป็น OPEN
-
-    @IsString()
-    @IsOptional()
-    instructorName?: string; // ชื่อผู้สอน
+    status?: CourseStatus = CourseStatus.OPEN;
 }

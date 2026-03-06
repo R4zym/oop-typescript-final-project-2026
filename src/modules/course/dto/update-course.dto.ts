@@ -1,27 +1,25 @@
-import { IsString, IsEnum, IsOptional, MinLength } from 'class-validator';
-import { CourseStatus } from './create-course.dto'; // Import enum จากไฟล์สร้าง
+import { IsString, IsEnum, IsNumber, Min, Max, IsOptional } from 'class-validator';
+import { CourseStatus } from './create-course.dto';
 
 export class UpdateCourseDto {
-    // ปกติ courseId มักจะเป็น Unique Key ไม่ค่อยแก้กัน 
-    // แต่ถ้าต้องการให้แก้ได้ ก็ใส่ @IsOptional ไว้ครับ
-    @IsString()
-    @IsOptional()
-    @MinLength(3)
-    courseId?: string;
+    // เราจะไม่ใส่ courseId ที่นี่ เพราะปกติเราจะรับผ่าน @Param(':id') ใน Controller
+    // และไม่ต้องการให้ผู้ใช้แก้ไขรหัสวิชาที่เป็น Primary Key
 
     @IsString()
     @IsOptional()
     courseName?: string;
 
+    @IsNumber()
+    @Min(1)
+    @Max(5)
+    @IsOptional()
+    credits?: number;
+
     @IsString()
     @IsOptional()
-    description?: string;
+    category?: string;
 
     @IsEnum(CourseStatus)
     @IsOptional()
     status?: CourseStatus;
-
-    @IsString()
-    @IsOptional()
-    instructorName?: string;
 }
