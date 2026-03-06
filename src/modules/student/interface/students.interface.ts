@@ -13,8 +13,8 @@ export interface PersonInterface {
     email: string;         // เพิ่ม email
     password: string;      // เพิ่ม password (ในงานจริงควรมีการ Hash)
     age: number;
-    sex: "MALE" | "FEMALE" | "OTHER";
-    status: "ACTIVE" | "INACTIVE" | "GRADUATED" | "DROPPED_OUT";
+    sex: studentSex;
+    status: studentStatus;
     enrollments: EnrollmentInterface[];
     createdAt: string;
     updatedAt: string;
