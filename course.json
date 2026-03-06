@@ -1,0 +1,107 @@
+[
+  {
+    "courseId": "CS101",
+    "courseName": "Introduction to Computer Science",
+    "credits": 3,
+    "category": "Computer Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "MA101",
+    "courseName": "Fundamental Mathematics",
+    "credits": 3,
+    "category": "Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "EN101",
+    "courseName": "English Communication I",
+    "credits": 2,
+    "category": "Language",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "PH101",
+    "courseName": "Basic Physics",
+    "credits": 4,
+    "category": "Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "CH101",
+    "courseName": "General Chemistry",
+    "credits": 3,
+    "category": "Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "DB101",
+    "courseName": "Introduction to Database",
+    "credits": 3,
+    "category": "Computer Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "PY101",
+    "courseName": "General Psychology",
+    "credits": 3,
+    "category": "Social Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "MK101",
+    "courseName": "Principles of Marketing",
+    "credits": 3,
+    "category": "Business",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "HS101",
+    "courseName": "World History",
+    "credits": 2,
+    "category": "Social Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "AR101",
+    "courseName": "Art Appreciation",
+    "credits": 2,
+    "category": "Arts",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "ST101",
+    "courseName": "Introduction to Statistics",
+    "credits": 3,
+    "category": "Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "EC101",
+    "courseName": "Principles of Economics",
+    "credits": 3,
+    "category": "Business",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "PL101",
+    "courseName": "Introduction to Philosophy",
+    "credits": 2,
+    "category": "Social Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "LW101",
+    "courseName": "Introduction to Law",
+    "credits": 3,
+    "category": "Social Science",
+    "status": "OPEN"
+  },
+  {
+    "courseId": "AI101",
+    "courseName": "Artificial Intelligence Basics",
+    "credits": 3,
+    "category": "Computer Science",
+    "status": "OPEN"
+  }
+]

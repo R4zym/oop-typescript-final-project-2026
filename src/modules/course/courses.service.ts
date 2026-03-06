@@ -3,19 +3,37 @@ import { CreateCourseDto } from './dto/create-course.dto';
 import { UpdateCourseDto } from './dto/update-course.dto';
 import * as fs from 'fs';
 import * as path from 'path';
+import { join } from 'path';
 
 @Injectable()
 export class CourseService {
   // เปลี่ยนไปใช้ไฟล์ courses.json
-  private readonly filePath = path.resolve(process.cwd(), 'src/data/courses.json');
+  private readonly CoursePath = join(process.cwd(),"course.json")
 
   private readData(): any[] {
-    const jsonData = fs.readFileSync(this.filePath, 'utf-8');
-    return JSON.parse(jsonData);
+    try {
+      // ตรวจสอบว่าไฟล์มีอยู่จริงไหม
+      if (!fs.existsSync(this.CoursePath)) {
+        fs.writeFileSync(this.CoursePath, '[]', 'utf-8'); // สร้างไฟล์ใหม่ถ้าไม่มี
+        return [];
+      }
+
+      const jsonData = fs.readFileSync(this.CoursePath, 'utf-8');
+      
+      // ตรวจสอบว่าไฟล์ว่างเปล่าหรือไม่ (สาเหตุของ Error Unexpected end of JSON)
+      if (!jsonData || jsonData.trim() === "") {
+        return [];
+      }
+
+      return JSON.parse(jsonData);
+    } catch (error) {
+      console.error("Error reading JSON:", error);
+      return []; // คืนค่าอาเรย์ว่างถ้าเกิดปัญหา
+    }
   }
 
   private writeData(data: any[]): void {
-    fs.writeFileSync(this.filePath, JSON.stringify(data, null, 2), 'utf-8');
+    fs.writeFileSync(this.CoursePath, JSON.stringify(data, null, 2), 'utf-8');
   }
 
   // FIND ALL: ดึงวิชาทั้งหมดจาก courses.json
