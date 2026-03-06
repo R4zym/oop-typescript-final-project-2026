@@ -1,20 +1,51 @@
-import { IsString, IsInt, IsEmail, IsOptional } from 'class-validator';
+import { IsString, IsEmail, IsOptional, IsNotEmpty} from 'class-validator';
 
 export class CreateStudentDto {
     @IsString()
-    name: string;
+    @IsNotEmpty()
+    firstName: string;
 
-    @IsInt()
-    age: number;
+    @IsString()
+    @IsNotEmpty()
+    lastName: string;
+
+    @IsString()
+    @IsNotEmpty()
+    studentId: string;
 
     @IsEmail()
+    @IsNotEmpty()
     email: string;
 
-    @IsOptional()
     @IsString()
-    address?: string;
+    @IsNotEmpty()
+    password: string;
+
+    @IsString()
+    @IsNotEmpty()
+    phone: string;
 
     @IsOptional()
+    courseIds: string[];
+
+    @IsOptional()
+    address?: Address;
+}
+
+export class Address{
     @IsString()
-    phone?: string;
+    @IsNotEmpty()
+    houseNumber: string;
+
+    @IsString()
+    @IsNotEmpty()
+    street: string;
+
+    @IsString()
+    @IsNotEmpty()
+    province: string;
+
+    @IsString()
+    @IsNotEmpty()
+    postalNumber: string;
 }
