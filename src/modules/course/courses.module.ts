@@ -8,4 +8,4 @@ import { CourseService } from "./courses.service";
     providers: [CourseService],
     exports: [CourseService],
 })
-export class EventsModule {}
+export class CourseModule {}
