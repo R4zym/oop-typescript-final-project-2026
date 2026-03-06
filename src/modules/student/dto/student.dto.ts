@@ -7,7 +7,7 @@ import {
   ValidateNested, 
   IsOptional, 
   Min, 
-  NotEmpty 
+  IsNotEmpty 
 } from 'class-validator';
 import { Type } from 'class-transformer';
 
@@ -32,11 +32,11 @@ export enum studentStatus {
 // --- Sub-DTO สำหรับ Enrollment (ข้อมูลจาก course.json) ---
 export class EnrollmentDto {
     @IsString()
-    @NotEmpty()
+    @IsNotEmpty()
     courseId!: string;
 
     @IsString()
-    @NotEmpty()
+    @IsNotEmpty()
     courseName!: string;
 
     @IsEnum(enrollStatus)
@@ -46,22 +46,22 @@ export class EnrollmentDto {
 // --- 1. Create Student DTO (บังคับใส่ข้อมูลทั้งหมด) ---
 export class CreateStudentDto {
     @IsString()
-    @NotEmpty()
+    @IsNotEmpty()
     id!: string;
 
     @IsString()
-    @NotEmpty()
+    @IsNotEmpty()
     firstname!: string;
 
     @IsString()
-    @NotEmpty()
+    @IsNotEmpty()
     lastname!: string;
 
     @IsEmail()
     email!: string;
 
     @IsString()
-    @NotEmpty()
+    @IsNotEmpty()
     password!: string;
 
     @IsNumber()
