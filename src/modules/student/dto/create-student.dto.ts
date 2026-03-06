@@ -1,17 +1,18 @@
-import { IsString, IsEmail, IsOptional, IsNotEmpty} from 'class-validator';
+import { IsString, IsEmail, IsOptional, IsNotEmpty, IsNumber, IsEnum} from 'class-validator';
+import { CourseEnrollment } from '../interface/students.interface';
 
 export class CreateStudentDto {
     @IsString()
     @IsNotEmpty()
-    firstName: string;
+    id: string;
 
     @IsString()
     @IsNotEmpty()
-    lastName: string;
+    firstname: string;
 
     @IsString()
     @IsNotEmpty()
-    studentId: string;
+    lastname: string;
 
     @IsEmail()
     @IsNotEmpty()
@@ -21,31 +22,28 @@ export class CreateStudentDto {
     @IsNotEmpty()
     password: string;
 
-    @IsString()
+    @IsNumber()
     @IsNotEmpty()
-    phone: string;
-
-    @IsOptional()
-    courseIds: string[];
-
-    @IsOptional()
-    address?: Address;
-}
-
-export class Address{
-    @IsString()
-    @IsNotEmpty()
-    houseNumber: string;
+    age: number;
 
     @IsString()
     @IsNotEmpty()
-    street: string;
+    sex: studentSex;
+
+    @IsEnum()
+    @IsNotEmpty()
+    status: studentStatus;
 
     @IsString()
     @IsNotEmpty()
-    province: string;
+    enrollments: CourseEnrollment[];
 
     @IsString()
     @IsNotEmpty()
-    postalNumber: string;
+    createdAt: Date;
+
+    @IsString()
+    @IsNotEmpty()
+    updatedAt: Date;
+
 }
