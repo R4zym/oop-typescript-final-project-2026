@@ -11,7 +11,7 @@ export enum studentStatus {
     DROPPED_OUT = "DROPPED_OUT"
 }
 
-export enum enrollCourse {
+export enum enrollStatus {
     ENROLLED = "ENROLLED",
     WAITLISTED = "WAITLISTED",
     DROPPED = "DROPPED"
