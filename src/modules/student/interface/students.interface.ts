@@ -1,4 +1,9 @@
-import { studentSex, studentStatus } from "../student.enum"
+import { studentSex, studentStatus , enrollCourse } from "../students.enum"
+
+export interface CourseEnrollment {
+    courseName: string;
+    status: enrollCourse; // ใช้ Enum เดิมที่คุณมี
+}
 
 export interface personInterface {
     id: string,
@@ -8,6 +13,8 @@ export interface personInterface {
     sex: studentSex,
     status: studentStatus,
     createdAt: Date,
-    updatedAt: Date
-    courses: string[]
+    updatedAt: Date,
+    // เปลี่ยนจาก string[] และ enrollCourse แยกกัน 
+    // เป็นการเก็บรวมกันใน Array เดียว
+    enrollments: CourseEnrollment[] 
 }
