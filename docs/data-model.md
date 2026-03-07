@@ -33,10 +33,9 @@
 
 ## Course Fields
 
-  Field        Type                Required   Description
-  ------------ ------------------- ---------- ------------------
-  courseId     string              Yes        รหัสวิชา (ต้องไม่ซ้ำ)
-  courseName   string              Yes        ชื่อวิชา
+  Field   |     Type      | Required |  Description
+  courseId   |     string     | Yes | รหัสวิชา (ต้องไม่ซ้ำ)
+  courseName   |   string     | Yes | ชื่อวิชา
   credits      number              Yes        หน่วยกิต (1--5)
   category     string              Yes        หมวดหมู่วิชา
   status       enum                Optional   สถานะวิชา
