@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
-import { CreateCourseDto } from './dto/create-course.dto';
+import { CourseStatus, CreateCourseDto } from './dto/create-course.dto';
 import { UpdateCourseDto } from './dto/update-course.dto';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -10,7 +10,7 @@ export class CourseService {
   // เปลี่ยนไปใช้ไฟล์ courses.json
   private readonly CoursePath = join(process.cwd(),"course.json")
 
-  private readData(): any[] {
+  private readData(): Course[] {
     try {
       // ตรวจสอบว่าไฟล์มีอยู่จริงไหม
       if (!fs.existsSync(this.CoursePath)) {
@@ -32,17 +32,17 @@ export class CourseService {
     }
   }
 
-  private writeData(data: any[]): void {
+  private writeData(data: Course[]): void {
     fs.writeFileSync(this.CoursePath, JSON.stringify(data, null, 2), 'utf-8');
   }
 
   // FIND ALL: ดึงวิชาทั้งหมดจาก courses.json
-  findAll() {
+  findAll(): Course[] {
     return this.readData();
   }
 
   // FIND ONE: ค้นหาตาม courseId
-  findOne(courseId: string) {
+  findOne(courseId: string): Course {
     const courses = this.readData();
     const course = courses.find(c => c.courseId === courseId);
     if (!course) throw new NotFoundException(`ไม่พบวิชารหัส ${courseId}`);
@@ -50,7 +50,7 @@ export class CourseService {
   }
 
   // CREATE: เพิ่มวิชาใหม่ลงใน courses.json
-  create(createCourseDto: CreateCourseDto) {
+  create(createCourseDto: CreateCourseDto): Course {
     const courses = this.readData();
     
     // ตรวจสอบว่ามีรหัสวิชานี้อยู่แล้วหรือไม่
@@ -97,4 +97,14 @@ export class CourseService {
     this.writeData(filtered);
     return { message: `ลบวิชา ${courseId} สำเร็จ` };
   }
+}
+
+export interface Course {
+  createdAt: string;
+  updatedAt: string;
+  courseId: string;
+  courseName: string;
+  credits: number;
+  category: string;
+  status?: CourseStatus | undefined;
 }
