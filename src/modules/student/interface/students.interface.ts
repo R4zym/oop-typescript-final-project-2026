@@ -6,7 +6,7 @@ export interface EnrollmentInterface {
     status: enrollStatus; // ใช้ Enum
 }
 
-export interface PersonInterface {
+export interface studentInterface {
     id: string;
     firstname: string;
     lastname: string;

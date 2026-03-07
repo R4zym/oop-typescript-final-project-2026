@@ -3,6 +3,7 @@ import { CreateStudentDto, UpdateStudentDto, EnrollmentDto } from './dto/student
 import * as fs from 'fs';
 import * as path from 'path';
 import { join } from 'path';
+import { Course } from '../course/courses.service';
 
 @Injectable()
 export class StudentService {
@@ -28,13 +29,23 @@ export class StudentService {
   }
 
   // ตรวจสอบวิชากับ course.json
-  private validateEnrollments(enrollments: EnrollmentDto[]) {
-    // ระบุว่าเป็นประเภท any หรือสร้าง interface Course มารองรับก็ได้
-    const courses = this.readJsonFile<any>(this.CoursePath);
+  private validateEnrollments(enrollments: EnrollmentDto[]): void {
+    const courses = this.readJsonFile<Course>(this.CoursePath);
+    
     for (const item of enrollments) {
-      const courseExists = courses.find(c => c.courseId === item.courseId);
+      // ตรวจสอบว่ามีวิชาที่ทั้งรหัส (courseId) และชื่อ (courseName) ตรงกันเป๊ะๆ หรือไม่
+      const courseExists = courses.find(
+        (c) => c.courseId === item.courseId && c.courseName === item.courseName
+      );
+
       if (!courseExists) {
-        throw new BadRequestException(`ไม่พบวิชา ${item.courseId} ในระบบ`);
+        // แยกเคสเพื่อให้ Error Message ชัดเจนขึ้น (ทางเลือก)
+        const idOnly = courses.find(c => c.courseId === item.courseId);
+        if (!idOnly) {
+          throw new BadRequestException(`ไม่พบรหัสวิชา ${item.courseId} ในระบบ`);
+        } else {
+          throw new BadRequestException(`ชื่อวิชาไม่ถูกต้องสำหรับรหัส ${item.courseId} (คาดหวัง: ${idOnly.courseName})`);
+        }
       }
     }
   }

@@ -69,7 +69,7 @@ export class CourseService {
   }
 
   // UPDATE: แก้ไขข้อมูลวิชาใน courses.json
-  update(courseId: string, updateCourseDto: UpdateCourseDto) {
+  update(courseId: string, updateCourseDto: UpdateCourseDto): Course {
     const courses = this.readData();
     const index = courses.findIndex(c => c.courseId === courseId);
 
