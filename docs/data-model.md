@@ -33,14 +33,15 @@
 
 ## Course Fields
 
-  Field   |     Type      | Required |  Description
-  courseId   |     string     | Yes | รหัสวิชา (ต้องไม่ซ้ำ)
-  courseName   |   string     | Yes | ชื่อวิชา
-  credits      number              Yes        หน่วยกิต (1--5)
-  category     string              Yes        หมวดหมู่วิชา
-  status       enum                Optional   สถานะวิชา
-  createdAt    string (ISO Date)   Auto       วันที่สร้าง
-  updatedAt    string (ISO Date)   Auto       วันที่อัปเดตล่าสุด
+  | Field | Type | Required | Description |
+  |:------|:-----|:---------|:------------|
+  |courseId   |  string            |  Yes      |  รหัสวิชา (ต้องไม่ซ้ำ) |
+  |courseName |  string            |  Yes      |  ชื่อวิชา |
+  |credits    |  number            |  Yes      |  หน่วยกิต (1--5) |
+  |category   |  string            |  Yes      |  หมวดหมู่วิชา |
+  |status     |  enum              |  Optional |  สถานะวิชา |
+  |createdAt  |  string (ISO Date) |  Auto     |  วันที่สร้าง |
+  |updatedAt  |  string (ISO Date) |  Auto     |  วันที่อัปเดตล่าสุด |
 
 ## Course Status Enum
 
@@ -101,19 +102,19 @@
 
 ## Student Fields
 
-  Field         Type     Required   Description
-  ------------- -------- ---------- -------------------
-  id            string   Yes        รหัสนักเรียน (ห้ามซ้ำ)
-  firstname     string   Yes        ชื่อ
-  lastname      string   Yes        นามสกุล
-  email         string   Yes        อีเมล
-  password      string   Yes        รหัสผ่าน
-  age           number   Yes        อายุ
-  sex           enum     Yes        เพศ
-  status        enum     Yes        สถานะนักเรียน
-  enrollments   array    Yes        รายวิชาที่ลงทะเบียน
-  createdAt     string   Auto       วันที่สร้าง
-  updatedAt     string   Auto       วันที่อัปเดต
+  | Field | Type | Required | Description |
+  |:-----------|:-------|:---------|:------------|
+  |id          | string | Yes      | รหัสนักเรียน (ห้ามซ้ำ) | 
+  |firstname   | string | Yes      | ชื่อ  |
+  |lastname    | string | Yes      | นามสกุล  |
+  |email       | string | Yes      | อีเมล  |
+  |password    | string | Yes      | รหัสผ่าน  |
+  |age         | number | Yes      | อายุ  |
+  |sex         | enum   | Yes      | เพศ  |
+  |status      | enum   | Yes      | สถานะนักเรียน  |
+  |enrollments | array  | Yes      | รายวิชาที่ลงทะเบียน  |
+  |createdAt   | string | Auto     | วันที่สร้าง  |
+  |updatedAt   | string | Auto     | วันที่อัปเดต  |
 
 ------------------------------------------------------------------------
 
