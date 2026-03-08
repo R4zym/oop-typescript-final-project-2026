@@ -94,7 +94,7 @@ export class CourseService {
     }
 
     this.writeData(filtered);
-    return { message: `ลบวิชา ${courseId} สำเร็จ` };
+    return `successfully deleted course ${courseId}`;
   }
 }
 

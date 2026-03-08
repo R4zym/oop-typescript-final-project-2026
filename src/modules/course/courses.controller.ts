@@ -49,7 +49,7 @@ export class CourseController {
     const updatedCourse = await this.courseService.update(id, updateCourseDto);
     return {
       success: true,
-      message: "successfully updated course",
+      message: `successfully updated course ${id}`,
       data: updatedCourse,
     };
   }
@@ -60,8 +60,8 @@ export class CourseController {
     const delData = await this.courseService.remove(id);
     return {
       success: true,
-      message: "successfully deleted course",
-      data: null,
+      message: `successfully deleted course ${id}`,
+      data: delData,
     };
   }
 }
