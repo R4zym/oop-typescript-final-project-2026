@@ -1,7 +1,7 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
 import { CourseService, Course } from './courses.service'; // เพิ่ม Course เข้ามาใน import
 import { CreateCourseDto } from './dto/create-course.dto';
-import { UpdateCourseDto } from './dto/update-course.dto';
+import { UpdateCourseDto, UpdateAllCourseDto } from './dto/update-course.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { ApiResponse } from '../../common/interface/ApiResponse.Interfaces';
 
@@ -41,6 +41,17 @@ export class CourseController {
       message: "successfully created course",
       data: newCourse,
     }
+  }
+
+  @Put(':id')
+  @ApiOperation({ summary: 'Update a course by ID' })
+  async updateFull(@Param('id') id: string, @Body() updateAllCourseDto: UpdateAllCourseDto): Promise<ApiResponse<Course>> {
+    const updatedAllCourse = await this.courseService.update(id, updateAllCourseDto);
+    return {
+      success: true,
+      message: `successfully updated course ${id}`,
+      data: updatedAllCourse,
+    };
   }
 
   @Patch(':id')

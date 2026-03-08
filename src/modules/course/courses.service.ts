@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { CourseStatus, CreateCourseDto } from './dto/create-course.dto';
-import { UpdateCourseDto } from './dto/update-course.dto';
+import { UpdateAllCourseDto, UpdateCourseDto } from './dto/update-course.dto';
 import * as fs from 'fs';
 import * as path from 'path';
 import { join } from 'path';
@@ -67,7 +67,22 @@ export class CourseService {
     return newCourse;
   }
 
-  
+  async updateAll(courseId: string, updateAllCourseDto: UpdateAllCourseDto): Promise<Course> {
+    const courses = await this.readData();
+    const index = courses.findIndex(c => c.courseId === courseId);
+
+    if (index === -1) throw new NotFoundException(`ไม่พบวิชารหัส ${courseId}`);
+
+    courses[index] = {
+      ...courses[index],
+      ...updateAllCourseDto,
+      updatedAt: new Date().toISOString(),
+    };
+    
+    this.writeData(courses);
+    return courses[index];
+  }
+
   async update(courseId: string, updateCourseDto: UpdateCourseDto): Promise<Course> {
     const courses = await this.readData();
     const index = courses.findIndex(c => c.courseId === courseId);
