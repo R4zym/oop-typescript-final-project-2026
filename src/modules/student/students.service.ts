@@ -111,7 +111,7 @@ export class StudentService {
     }
 
     this.writeJsonFile(this.StudentPath, filteredStudents);
-    return { message: 'ลบข้อมูลเรียบร้อยแล้ว' };
+    return `successfully deleted student ${id}`;
   }
 }
 

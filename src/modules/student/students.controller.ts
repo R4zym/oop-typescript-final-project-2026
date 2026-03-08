@@ -48,7 +48,7 @@ export class StudentController {
     const updatedStudent = await this.studentService.update(id, updateDto);
     return {
       success: true,
-      message: "successfully updated student",
+      message: `successfully updated student ${id}`,
       data: updatedStudent,
     };
   }
@@ -59,8 +59,8 @@ export class StudentController {
     const delData = await this.studentService.remove(id);
     return {
       success: true,
-      message: "successfully deleted student",
-      data: null,
+      message: `successfully deleted student ${id}`,
+      data: delData,
     };
   }
 }
