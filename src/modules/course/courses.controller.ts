@@ -45,8 +45,8 @@ export class CourseController {
 
   @Put(':id')
   @ApiOperation({ summary: 'Update a course by ID' })
-  async updateFull(@Param('id') id: string, @Body() updateAllCourseDto: UpdateAllCourseDto): Promise<ApiResponse<Course>> {
-    const updatedAllCourse = await this.courseService.update(id, updateAllCourseDto);
+  async updateAll(@Param('id') id: string, @Body() updateAllCourseDto: UpdateAllCourseDto): Promise<ApiResponse<Course>> {
+    const updatedAllCourse = await this.courseService.updateAll(id, updateAllCourseDto);
     return {
       success: true,
       message: `successfully updated course ${id}`,
