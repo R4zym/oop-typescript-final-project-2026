@@ -1,33 +1,66 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { StudentService } from './students.service';
+import { Student, StudentService } from './students.service';
 import { CreateStudentDto, UpdateStudentDto } from './dto/student.dto';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
+import { ApiResponse } from '../../common/interface/ApiResponse.Interfaces';
 
+@ApiTags('students')
 @Controller('students')
 export class StudentController {
   constructor(private readonly studentService: StudentService) {}
 
   @Get()
-  getAll() {
-    return this.studentService.findAll();
+  @ApiOperation({ summary: 'Get all students' })
+  async getAll(): Promise<ApiResponse<Student[]>> {
+    const getData = await this.studentService.findAll();
+    return {
+      success: true,
+      message: "successfully get all students",
+      data: getData,
+    }
   }
 
   @Get(':id')
-  getOne(@Param('id') id: string) {
-    return this.studentService.findOne(id);
+  @ApiOperation({ summary: 'Get a student by ID' })
+  async getOne(@Param('id') id: string): Promise<ApiResponse<Student>> {
+    const getOneData = await this.studentService.findOne(id);
+    return {
+      success: true,
+      message: "successfully get student",
+      data: getOneData,
+    }
   }
 
   @Post()
-  create(@Body() createDto: CreateStudentDto) {
-    return this.studentService.create(createDto);
+  @ApiOperation({ summary: 'Create a new student' })
+  async create(@Body() createDto: CreateStudentDto): Promise<ApiResponse<Student>> {
+    const newStudent = await this.studentService.create(createDto);
+    return {
+      success: true,
+      message: "successfully created student",
+      data: newStudent,
+    };
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() updateDto: UpdateStudentDto) {
-    return this.studentService.update(id, updateDto);
-}
+  @ApiOperation({ summary: 'Update a student' })
+  async update(@Param('id') id: string, @Body() updateDto: UpdateStudentDto): Promise<ApiResponse<Student>> {
+    const updatedStudent = await this.studentService.update(id, updateDto);
+    return {
+      success: true,
+      message: "successfully updated student",
+      data: updatedStudent,
+    };
+  }
 
   @Delete(':id')
-  delete(@Param('id') id: string) {
-    return this.studentService.remove(id);
+  @ApiOperation({ summary: 'Delete a student' })
+  async delete(@Param('id') id: string): Promise<ApiResponse<null>> {
+    const delData = await this.studentService.remove(id);
+    return {
+      success: true,
+      message: "successfully deleted student",
+      data: null,
+    };
   }
 }

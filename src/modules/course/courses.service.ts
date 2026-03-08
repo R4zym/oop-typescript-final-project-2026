@@ -7,20 +7,19 @@ import { join } from 'path';
 
 @Injectable()
 export class CourseService {
-  // เปลี่ยนไปใช้ไฟล์ courses.json
   private readonly CoursePath = join(process.cwd(),"course.json")
 
   private readData(): Course[] {
     try {
-      // ตรวจสอบว่าไฟล์มีอยู่จริงไหม
+      
       if (!fs.existsSync(this.CoursePath)) {
-        fs.writeFileSync(this.CoursePath, '[]', 'utf-8'); // สร้างไฟล์ใหม่ถ้าไม่มี
+        fs.writeFileSync(this.CoursePath, '[]', 'utf-8'); 
         return [];
       }
 
       const jsonData = fs.readFileSync(this.CoursePath, 'utf-8');
       
-      // ตรวจสอบว่าไฟล์ว่างเปล่าหรือไม่ (สาเหตุของ Error Unexpected end of JSON)
+      
       if (!jsonData || jsonData.trim() === "") {
         return [];
       }
@@ -28,7 +27,7 @@ export class CourseService {
       return JSON.parse(jsonData);
     } catch (error) {
       console.error("Error reading JSON:", error);
-      return []; // คืนค่าอาเรย์ว่างถ้าเกิดปัญหา
+      return [];
     }
   }
 
@@ -36,24 +35,24 @@ export class CourseService {
     fs.writeFileSync(this.CoursePath, JSON.stringify(data, null, 2), 'utf-8');
   }
 
-  // FIND ALL: ดึงวิชาทั้งหมดจาก courses.json
-  findAll(): Course[] {
+  
+  async findAll(): Promise<Course[]> {
     return this.readData();
   }
 
-  // FIND ONE: ค้นหาตาม courseId
-  findOne(courseId: string): Course {
-    const courses = this.readData();
+  
+  async findOne(courseId: string): Promise<Course> {
+    const courses = await this.readData();
     const course = courses.find(c => c.courseId === courseId);
     if (!course) throw new NotFoundException(`ไม่พบวิชารหัส ${courseId}`);
     return course;
   }
 
-  // CREATE: เพิ่มวิชาใหม่ลงใน courses.json
-  create(createCourseDto: CreateCourseDto): Course {
-    const courses = this.readData();
+  
+  async create(createCourseDto: CreateCourseDto): Promise<Course> {
+    const courses = await this.readData();
     
-    // ตรวจสอบว่ามีรหัสวิชานี้อยู่แล้วหรือไม่
+    
     const existing = courses.find(c => c.courseId === createCourseDto.courseId);
     if (existing) throw new BadRequestException('รหัสวิชานี้มีอยู่ในระบบแล้ว');
 
@@ -68,9 +67,9 @@ export class CourseService {
     return newCourse;
   }
 
-  // UPDATE: แก้ไขข้อมูลวิชาใน courses.json
-  update(courseId: string, updateCourseDto: UpdateCourseDto): Course {
-    const courses = this.readData();
+  
+  async update(courseId: string, updateCourseDto: UpdateCourseDto): Promise<Course> {
+    const courses = await this.readData();
     const index = courses.findIndex(c => c.courseId === courseId);
 
     if (index === -1) throw new NotFoundException(`ไม่พบวิชารหัส ${courseId}`);
@@ -85,9 +84,9 @@ export class CourseService {
     return courses[index];
   }
 
-  // DELETE: ลบวิชาออกจาก courses.json
-  remove(courseId: string) {
-    const courses = this.readData();
+  
+  async remove(courseId: string) {
+    const courses = await this.readData();
     const filtered = courses.filter(c => c.courseId !== courseId);
     
     if (courses.length === filtered.length) {

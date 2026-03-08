@@ -2,8 +2,6 @@ import { IsString, IsEnum, IsNumber, Min, Max, IsOptional } from 'class-validato
 import { CourseStatus } from './create-course.dto';
 
 export class UpdateCourseDto {
-    // เราจะไม่ใส่ courseId ที่นี่ เพราะปกติเราจะรับผ่าน @Param(':id') ใน Controller
-    // และไม่ต้องการให้ผู้ใช้แก้ไขรหัสวิชาที่เป็น Primary Key
 
     @IsString()
     @IsOptional()

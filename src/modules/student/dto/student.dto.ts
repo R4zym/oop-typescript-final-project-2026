@@ -29,7 +29,7 @@ export enum studentStatus {
     INACTIVE = 'INACTIVE'
 }
 
-// --- Sub-DTO สำหรับ Enrollment (ข้อมูลจาก course.json) ---
+
 export class EnrollmentDto {
     @IsString()
     @IsNotEmpty()
