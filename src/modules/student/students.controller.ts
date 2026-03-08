@@ -44,8 +44,8 @@ export class StudentController {
 
   @Put(':id')
   @ApiOperation({ summary: 'Update a student' })
-  async updateFull(@Param('id') id: string, @Body() updateAllDto: UpdateAllStudentDto): Promise<ApiResponse<Student>> {
-    const updatedAllStudent = await this.studentService.update(id, updateAllDto);
+  async updateAll(@Param('id') id: string, @Body() updateAllDto: UpdateAllStudentDto): Promise<ApiResponse<Student>> {
+    const updatedAllStudent = await this.studentService.updateAll(id, updateAllDto);
     return {
       success: true,
       message: `successfully updated student ${id}`,
