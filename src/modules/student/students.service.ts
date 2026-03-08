@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
-import { CreateStudentDto, UpdateStudentDto, EnrollmentDto } from './dto/student.dto';
+import { CreateStudentDto, UpdateStudentDto, UpdateAllStudentDto, EnrollmentDto } from './dto/student.dto';
 import * as fs from 'fs';
 import * as path from 'path';
 import { join } from 'path';
@@ -80,6 +80,26 @@ export class StudentService {
     students.push(newStudent);
     this.writeJsonFile(this.StudentPath, students);
     return newStudent;
+  }
+
+  async updateAll(id: string, updateAllStudentDto: UpdateAllStudentDto): Promise<Student> {
+    let students = await this.readJsonFile<Student>(this.StudentPath);
+    const index = students.findIndex(s => s.id === id);
+
+    if (index === -1) throw new NotFoundException(`ไม่พบนักเรียนไอดี ${id}`);
+
+    if (updateAllStudentDto.enrollments) {
+      this.validateEnrollments(updateAllStudentDto.enrollments);
+    }
+
+    students[index] = {
+      ...students[index],
+      ...updateAllStudentDto,
+      updatedAt: new Date().toISOString(),
+    };
+
+    this.writeJsonFile(this.StudentPath, students);
+    return students[index];
   }
 
   async update(id: string, updateStudentDto: UpdateStudentDto): Promise<Student> {

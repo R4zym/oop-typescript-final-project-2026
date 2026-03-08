@@ -1,6 +1,6 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
 import { Student, StudentService } from './students.service';
-import { CreateStudentDto, UpdateStudentDto } from './dto/student.dto';
+import { CreateStudentDto, UpdateAllStudentDto, UpdateStudentDto } from './dto/student.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
 import { ApiResponse } from '../../common/interface/ApiResponse.Interfaces';
 
@@ -39,6 +39,17 @@ export class StudentController {
       success: true,
       message: "successfully created student",
       data: newStudent,
+    };
+  }
+
+  @Put(':id')
+  @ApiOperation({ summary: 'Update a student' })
+  async updateFull(@Param('id') id: string, @Body() updateAllDto: UpdateAllStudentDto): Promise<ApiResponse<Student>> {
+    const updatedAllStudent = await this.studentService.update(id, updateAllDto);
+    return {
+      success: true,
+      message: `successfully updated student ${id}`,
+      data: updatedAllStudent,
     };
   }
 

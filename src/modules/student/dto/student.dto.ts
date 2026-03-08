@@ -46,22 +46,22 @@ export class EnrollmentDto {
 // --- 1. Create Student DTO (บังคับใส่ข้อมูลทั้งหมด) ---
 export class CreateStudentDto {
     @IsString()
-    @IsNotEmpty()
+    @IsNotEmpty({ message: 'กรุณาระบุรหัสนักศึกษา' })
     id!: string;
 
     @IsString()
-    @IsNotEmpty()
+    @IsNotEmpty({ message: 'กรุณาระบุชื่อ' })
     firstname!: string;
 
     @IsString()
-    @IsNotEmpty()
+    @IsNotEmpty({ message: 'กรุณาระบุนามสกุล' })
     lastname!: string;
 
-    @IsEmail()
+    @IsEmail({}, { message: 'รูปแบบอีเมลไม่ถูกต้อง' })
     email!: string;
 
     @IsString()
-    @IsNotEmpty()
+    @IsNotEmpty({ message: 'กรุณาระบุรหัสผ่าน' })
     password!: string;
 
     @IsNumber()
@@ -116,4 +116,40 @@ export class UpdateStudentDto {
     @ValidateNested({ each: true })
     @Type(() => EnrollmentDto)
     enrollments?: EnrollmentDto[];
+}
+
+export class UpdateAllStudentDto {
+    @IsString()
+    @IsNotEmpty({ message: 'กรุณาระบุรหัสนักศึกษา' })
+    id!: string;
+
+    @IsString()
+    @IsNotEmpty({ message: 'กรุณาระบุชื่อ' })
+    firstname!: string;
+
+    @IsString()
+    @IsNotEmpty({ message: 'กรุณาระบุนามสกุล' })
+    lastname!: string;
+
+    @IsEmail({}, { message: 'รูปแบบอีเมลไม่ถูกต้อง' })
+    email!: string;
+
+    @IsString()
+    @IsNotEmpty({ message: 'กรุณาระบุรหัสผ่าน' })
+    password!: string;
+
+    @IsNumber()
+    @Min(0)
+    age!: number;
+
+    @IsEnum(studentSex)
+    sex!: studentSex;
+
+    @IsEnum(studentStatus)
+    status!: studentStatus;
+
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => EnrollmentDto)
+    enrollments!: EnrollmentDto[];
 }
