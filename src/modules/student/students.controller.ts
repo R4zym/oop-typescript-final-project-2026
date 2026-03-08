@@ -43,7 +43,7 @@ export class StudentController {
   }
 
   @Put(':id')
-  @ApiOperation({ summary: 'Update a student' })
+  @ApiOperation({ summary: 'Update a student by id' })
   async updateAll(@Param('id') id: string, @Body() updateAllDto: UpdateAllStudentDto): Promise<ApiResponse<Student>> {
     const updatedAllStudent = await this.studentService.updateAll(id, updateAllDto);
     return {
@@ -54,7 +54,7 @@ export class StudentController {
   }
 
   @Patch(':id')
-  @ApiOperation({ summary: 'Update a student' })
+  @ApiOperation({ summary: 'Update a student by id' })
   async update(@Param('id') id: string, @Body() updateDto: UpdateStudentDto): Promise<ApiResponse<Student>> {
     const updatedStudent = await this.studentService.update(id, updateDto);
     return {
