@@ -9,8 +9,9 @@ http://localhost:3000
 #  1. Student Management API
 จัดการข้อมูลนักเรียนและการลงทะเบียน
 
+## 1.1 Get Student
 
-## 1.1 Get All Students
+### 1.1.1 Get All Students
 -Method: GET
 
 -Endpoint: /students
@@ -43,7 +44,7 @@ Response Example
 ]
 ```
 
-## 1.2 Get Student By ID
+### 1.1.2 Get Student By ID
 
 -Method: GET
 
@@ -51,7 +52,7 @@ Response Example
 
 -Example: GET /students/65001
 
-# 1.3 Create Student
+## 1.2 Create Student
 
 -Method: POST
 
@@ -72,7 +73,36 @@ Response Example
 }
 ```
 
-# 1.4 Update Student
+## 1.3 Update Student (ทุกอย่าง)
+
+-Method: PUT
+
+-Endpoint: /students/{id}
+
+-Example: PUT /students/65001
+
+-Request Body:
+```
+{
+  "id": "65001",
+  "firstname": "Somchai",
+  "lastname": "Jaidee",
+  "email": "somchai.new@example.com",
+  "password": "newpassword123",
+  "age": 21,
+  "sex": "MALE",
+  "status": "ACTIVE",
+  "enrollments": [
+    {
+      "courseId": "CS101",
+      "courseName": "Introduction to Programming",
+      "status": "ENROLLED"
+    }
+  ]
+}
+```
+
+## 1.4 Update Student (บางส่วน)
 
 -Method: PATCH
 
@@ -108,7 +138,9 @@ Response Example
 # 2. Course Management API
 จัดการข้อมูลรายวิชาหลักในระบบ
 
-## 2.1 Get All Courses
+## 2.1 Get Courses
+
+### 2.1.1 Get All Courses
 
 -Method: GET
 
@@ -117,7 +149,32 @@ Response Example
 -Response Example:
 ```
 [
-  {
+    {
+        "courseId": "CS101",
+        "courseName": "Introduction to Programming",
+        "credits": 3,
+        "description": "Fundamental of programming",
+        "category": "Core",
+        "status": "OPEN",
+        "createdAt": "2026-03-01T10:00:00.000Z",
+        "updatedAt": "2026-03-01T10:00:00.000Z"
+    },
+    {
+        ...
+    }
+]
+```
+
+### 2.1.2 Get Course By id
+
+-Method: GET
+
+-Endpoint: /courses/{courseId}
+
+-Resonpse Example:
+```
+[
+    {
     "courseId": "CS101",
     "courseName": "Introduction to Programming",
     "credits": 3,
@@ -126,7 +183,7 @@ Response Example
     "status": "OPEN",
     "createdAt": "2026-03-01T10:00:00.000Z",
     "updatedAt": "2026-03-01T10:00:00.000Z"
-  }
+    }
 ]
 ```
 
@@ -148,13 +205,32 @@ Response Example
 }
 ```
 
-## 2.3 Update Course
+## 2.3 Update Course (ทุกอย่าง)
+
+-Method: PUT
+
+-EndPoint: /courses/{courseId}
+
+-Request Body:
+```
+{
+    "courseId": "CH101",
+    "courseName": "General Chemistry",
+    "credits": 3,
+    "category": "Science",
+    "status": "OPEN"
+},
+```
+
+## 2.4 Update Course (บางส่วน)
 
 -Method: PATCH
 
 -Endpoint: /courses/{courseId}
 
-## 2.4 Delete Course
+-Request Body: (ส่งเฉพาะฟิลด์ที่ต้องการแก้)
+
+## 2.5 Delete Course
 
 -Method: DELETE
 
