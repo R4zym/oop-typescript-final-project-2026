@@ -9,8 +9,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-01T08:00:00Z",
     "updatedAt": "2024-01-01T08:00:00Z"
@@ -25,8 +33,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" },
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "WAITLISTED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-01T08:30:00Z",
     "updatedAt": "2024-01-01T08:30:00Z"
@@ -41,8 +57,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "DROPPED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "DROPPED"
+      }
     ],
     "createdAt": "2024-01-01T09:00:00Z",
     "updatedAt": "2024-01-01T09:00:00Z"
@@ -57,8 +81,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" },
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" }
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-01T09:15:00Z",
     "updatedAt": "2024-01-01T09:15:00Z"
@@ -73,9 +105,21 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" },
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-01T10:00:00Z",
     "updatedAt": "2024-01-01T10:00:00Z"
@@ -90,8 +134,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" },
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-02T08:00:00Z",
     "updatedAt": "2024-01-02T08:00:00Z"
@@ -106,7 +158,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-02T08:30:00Z",
     "updatedAt": "2024-01-02T08:30:00Z"
@@ -121,8 +177,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-02T09:00:00Z",
     "updatedAt": "2024-01-02T09:00:00Z"
@@ -137,8 +201,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" },
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "WAITLISTED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-02T09:15:00Z",
     "updatedAt": "2024-01-02T09:15:00Z"
@@ -153,7 +225,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-02T10:00:00Z",
     "updatedAt": "2024-01-02T10:00:00Z"
@@ -168,8 +244,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-03T08:00:00Z",
     "updatedAt": "2024-01-03T08:00:00Z"
@@ -184,7 +268,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-03T08:30:00Z",
     "updatedAt": "2024-01-03T08:30:00Z"
@@ -199,8 +287,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" },
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-03T09:00:00Z",
     "updatedAt": "2024-01-03T09:00:00Z"
@@ -215,7 +311,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" }
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-03T09:15:00Z",
     "updatedAt": "2024-01-03T09:15:00Z"
@@ -230,8 +330,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" },
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "WAITLISTED" }
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-03T10:00:00Z",
     "updatedAt": "2024-01-03T10:00:00Z"
@@ -246,8 +354,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-04T08:00:00Z",
     "updatedAt": "2024-01-04T08:00:00Z"
@@ -262,7 +378,11 @@
     "sex": "MALE",
     "status": "INACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "DROPPED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "DROPPED"
+      }
     ],
     "createdAt": "2024-01-04T08:30:00Z",
     "updatedAt": "2024-01-04T08:30:00Z"
@@ -277,8 +397,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" },
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-04T09:00:00Z",
     "updatedAt": "2024-01-04T09:00:00Z"
@@ -293,7 +421,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-04T09:15:00Z",
     "updatedAt": "2024-01-04T09:15:00Z"
@@ -308,8 +440,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" },
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-04T10:00:00Z",
     "updatedAt": "2024-01-04T10:00:00Z"
@@ -324,7 +464,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-05T08:00:00Z",
     "updatedAt": "2024-01-05T08:00:00Z"
@@ -339,8 +483,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" },
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" }
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-05T08:30:00Z",
     "updatedAt": "2024-01-05T08:30:00Z"
@@ -355,7 +507,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "WAITLISTED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-05T09:00:00Z",
     "updatedAt": "2024-01-05T09:00:00Z"
@@ -370,8 +526,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" },
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-05T09:15:00Z",
     "updatedAt": "2024-01-05T09:15:00Z"
@@ -386,7 +550,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" }
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-05T10:00:00Z",
     "updatedAt": "2024-01-05T10:00:00Z"
@@ -401,8 +569,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" },
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-06T08:00:00Z",
     "updatedAt": "2024-01-06T08:00:00Z"
@@ -417,7 +593,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-06T08:30:00Z",
     "updatedAt": "2024-01-06T08:30:00Z"
@@ -432,8 +612,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-06T09:00:00Z",
     "updatedAt": "2024-01-06T09:00:00Z"
@@ -448,7 +636,11 @@
     "sex": "FEMALE",
     "status": "INACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "DROPPED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "DROPPED"
+      }
     ],
     "createdAt": "2024-01-06T09:15:00Z",
     "updatedAt": "2024-01-06T09:15:00Z"
@@ -463,8 +655,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" },
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-06T10:00:00Z",
     "updatedAt": "2024-01-06T10:00:00Z"
@@ -479,7 +679,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-07T08:00:00Z",
     "updatedAt": "2024-01-07T08:00:00Z"
@@ -494,8 +698,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" },
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" }
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-07T08:30:00Z",
     "updatedAt": "2024-01-07T08:30:00Z"
@@ -510,7 +722,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-07T09:00:00Z",
     "updatedAt": "2024-01-07T09:00:00Z"
@@ -525,8 +741,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" },
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-07T09:15:00Z",
     "updatedAt": "2024-01-07T09:15:00Z"
@@ -541,7 +765,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "WAITLISTED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-07T10:00:00Z",
     "updatedAt": "2024-01-07T10:00:00Z"
@@ -556,8 +784,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-08T08:00:00Z",
     "updatedAt": "2024-01-08T08:00:00Z"
@@ -572,7 +808,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-08T08:30:00Z",
     "updatedAt": "2024-01-08T08:30:00Z"
@@ -587,8 +827,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-08T09:00:00Z",
     "updatedAt": "2024-01-08T09:00:00Z"
@@ -603,7 +851,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-08T09:15:00Z",
     "updatedAt": "2024-01-08T09:15:00Z"
@@ -618,8 +870,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" },
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-08T10:00:00Z",
     "updatedAt": "2024-01-08T10:00:00Z"
@@ -634,7 +894,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" }
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-09T08:00:00Z",
     "updatedAt": "2024-01-09T08:00:00Z"
@@ -649,8 +913,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" },
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" }
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-09T08:30:00Z",
     "updatedAt": "2024-01-09T08:30:00Z"
@@ -665,7 +937,11 @@
     "sex": "MALE",
     "status": "INACTIVE",
     "enrollments": [
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "DROPPED" }
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "DROPPED"
+      }
     ],
     "createdAt": "2024-01-09T09:00:00Z",
     "updatedAt": "2024-01-09T09:00:00Z"
@@ -680,8 +956,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-09T09:15:00Z",
     "updatedAt": "2024-01-09T09:15:00Z"
@@ -696,7 +980,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-09T10:00:00Z",
     "updatedAt": "2024-01-09T10:00:00Z"
@@ -711,8 +999,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-10T08:00:00Z",
     "updatedAt": "2024-01-10T08:00:00Z"
@@ -727,7 +1023,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-10T08:30:00Z",
     "updatedAt": "2024-01-10T08:30:00Z"
@@ -742,8 +1042,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" },
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "WAITLISTED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-10T09:00:00Z",
     "updatedAt": "2024-01-10T09:00:00Z"
@@ -758,7 +1066,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" }
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-10T09:15:00Z",
     "updatedAt": "2024-01-10T09:15:00Z"
@@ -773,8 +1085,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-10T10:00:00Z",
     "updatedAt": "2024-01-10T10:00:00Z"
@@ -789,7 +1109,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-11T08:00:00Z",
     "updatedAt": "2024-01-11T08:00:00Z"
@@ -804,8 +1128,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" },
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-11T08:30:00Z",
     "updatedAt": "2024-01-11T08:30:00Z"
@@ -820,7 +1152,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-11T09:00:00Z",
     "updatedAt": "2024-01-11T09:00:00Z"
@@ -835,8 +1171,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-11T09:15:00Z",
     "updatedAt": "2024-01-11T09:15:00Z"
@@ -851,7 +1195,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-11T10:00:00Z",
     "updatedAt": "2024-01-11T10:00:00Z"
@@ -866,8 +1214,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" },
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" }
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-12T08:00:00Z",
     "updatedAt": "2024-01-12T08:00:00Z"
@@ -882,7 +1238,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-12T08:30:00Z",
     "updatedAt": "2024-01-12T08:30:00Z"
@@ -897,7 +1257,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "WAITLISTED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-12T09:00:00Z",
     "updatedAt": "2024-01-12T09:00:00Z"
@@ -912,8 +1276,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-12T09:15:00Z",
     "updatedAt": "2024-01-12T09:15:00Z"
@@ -928,7 +1300,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-12T10:00:00Z",
     "updatedAt": "2024-01-12T10:00:00Z"
@@ -943,8 +1319,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" },
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-13T08:00:00Z",
     "updatedAt": "2024-01-13T08:00:00Z"
@@ -959,7 +1343,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-13T08:30:00Z",
     "updatedAt": "2024-01-13T08:30:00Z"
@@ -974,8 +1362,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-13T09:00:00Z",
     "updatedAt": "2024-01-13T09:00:00Z"
@@ -990,7 +1386,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-13T09:15:00Z",
     "updatedAt": "2024-01-13T09:15:00Z"
@@ -1005,8 +1405,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" },
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" }
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-13T10:00:00Z",
     "updatedAt": "2024-01-13T10:00:00Z"
@@ -1021,7 +1429,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-14T08:00:00Z",
     "updatedAt": "2024-01-14T08:00:00Z"
@@ -1036,7 +1448,11 @@
     "sex": "MALE",
     "status": "INACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "DROPPED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "DROPPED"
+      }
     ],
     "createdAt": "2024-01-14T08:30:00Z",
     "updatedAt": "2024-01-14T08:30:00Z"
@@ -1051,8 +1467,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-14T09:00:00Z",
     "updatedAt": "2024-01-14T09:00:00Z"
@@ -1067,7 +1491,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-14T09:15:00Z",
     "updatedAt": "2024-01-14T09:15:00Z"
@@ -1082,8 +1510,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" },
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-14T10:00:00Z",
     "updatedAt": "2024-01-14T10:00:00Z"
@@ -1098,7 +1534,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-15T08:00:00Z",
     "updatedAt": "2024-01-15T08:00:00Z"
@@ -1113,8 +1553,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-15T08:30:00Z",
     "updatedAt": "2024-01-15T08:30:00Z"
@@ -1129,7 +1577,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-15T09:00:00Z",
     "updatedAt": "2024-01-15T09:00:00Z"
@@ -1144,8 +1596,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-15T09:15:00Z",
     "updatedAt": "2024-01-15T09:15:00Z"
@@ -1160,7 +1620,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "WAITLISTED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-15T10:00:00Z",
     "updatedAt": "2024-01-15T10:00:00Z"
@@ -1175,8 +1639,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AR101", "courseName": "Art Appreciation", "status": "ENROLLED" },
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "AR101",
+        "courseName": "Art Appreciation",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-16T08:00:00Z",
     "updatedAt": "2024-01-16T08:00:00Z"
@@ -1191,7 +1663,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-16T08:30:00Z",
     "updatedAt": "2024-01-16T08:30:00Z"
@@ -1206,8 +1682,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" },
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-16T09:00:00Z",
     "updatedAt": "2024-01-16T09:00:00Z"
@@ -1222,7 +1706,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-16T09:15:00Z",
     "updatedAt": "2024-01-16T09:15:00Z"
@@ -1237,8 +1725,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" },
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-16T10:00:00Z",
     "updatedAt": "2024-01-16T10:00:00Z"
@@ -1253,7 +1749,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-17T08:00:00Z",
     "updatedAt": "2024-01-17T08:00:00Z"
@@ -1268,8 +1768,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" },
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-17T08:30:00Z",
     "updatedAt": "2024-01-17T08:30:00Z"
@@ -1284,7 +1792,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "ENROLLED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-17T09:00:00Z",
     "updatedAt": "2024-01-17T09:00:00Z"
@@ -1299,8 +1811,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" },
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-17T09:15:00Z",
     "updatedAt": "2024-01-17T09:15:00Z"
@@ -1315,7 +1835,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" }
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-17T10:00:00Z",
     "updatedAt": "2024-01-17T10:00:00Z"
@@ -1330,8 +1854,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "DROPPED" },
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "DROPPED"
+      },
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-18T08:00:00Z",
     "updatedAt": "2024-01-18T08:00:00Z"
@@ -1346,7 +1878,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "HS101", "courseName": "World History", "status": "ENROLLED" }
+      {
+        "courseId": "HS101",
+        "courseName": "World History",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-18T08:30:00Z",
     "updatedAt": "2024-01-18T08:30:00Z"
@@ -1361,8 +1897,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EN101", "courseName": "English Communication I", "status": "ENROLLED" },
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" }
+      {
+        "courseId": "EN101",
+        "courseName": "English Communication I",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-18T09:00:00Z",
     "updatedAt": "2024-01-18T09:00:00Z"
@@ -1377,7 +1921,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-18T09:15:00Z",
     "updatedAt": "2024-01-18T09:15:00Z"
@@ -1392,8 +1940,16 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" },
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-18T10:00:00Z",
     "updatedAt": "2024-01-18T10:00:00Z"
@@ -1408,7 +1964,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "AI101", "courseName": "Artificial Intelligence Basics", "status": "WAITLISTED" }
+      {
+        "courseId": "AI101",
+        "courseName": "Artificial Intelligence Basics",
+        "status": "WAITLISTED"
+      }
     ],
     "createdAt": "2024-01-19T08:00:00Z",
     "updatedAt": "2024-01-19T08:00:00Z"
@@ -1423,7 +1983,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PY101", "courseName": "General Psychology", "status": "ENROLLED" }
+      {
+        "courseId": "PY101",
+        "courseName": "General Psychology",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-19T08:30:00Z",
     "updatedAt": "2024-01-19T08:30:00Z"
@@ -1438,8 +2002,16 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "DB101", "courseName": "Introduction to Database", "status": "ENROLLED" },
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "DB101",
+        "courseName": "Introduction to Database",
+        "status": "ENROLLED"
+      },
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-19T09:00:00Z",
     "updatedAt": "2024-01-19T09:00:00Z"
@@ -1454,7 +2026,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CH101", "courseName": "General Chemistry", "status": "ENROLLED" }
+      {
+        "courseId": "CH101",
+        "courseName": "General Chemistry",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-19T09:15:00Z",
     "updatedAt": "2024-01-19T09:15:00Z"
@@ -1469,7 +2045,11 @@
     "sex": "FEMALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "ST101", "courseName": "Introduction to Statistics", "status": "ENROLLED" }
+      {
+        "courseId": "ST101",
+        "courseName": "Introduction to Statistics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-19T10:00:00Z",
     "updatedAt": "2024-01-19T10:00:00Z"
@@ -1484,7 +2064,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "EC101", "courseName": "Principles of Economics", "status": "ENROLLED" }
+      {
+        "courseId": "EC101",
+        "courseName": "Principles of Economics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-20T08:00:00Z",
     "updatedAt": "2024-01-20T08:00:00Z"
@@ -1499,7 +2083,11 @@
     "sex": "FEMALE",
     "status": "INACTIVE",
     "enrollments": [
-      { "courseId": "LW101", "courseName": "Introduction to Law", "status": "DROPPED" }
+      {
+        "courseId": "LW101",
+        "courseName": "Introduction to Law",
+        "status": "DROPPED"
+      }
     ],
     "createdAt": "2024-01-20T08:30:00Z",
     "updatedAt": "2024-01-20T08:30:00Z"
@@ -1514,7 +2102,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "MA101", "courseName": "Fundamental Mathematics", "status": "ENROLLED" }
+      {
+        "courseId": "MA101",
+        "courseName": "Fundamental Mathematics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-20T09:00:00Z",
     "updatedAt": "2024-01-20T09:00:00Z"
@@ -1529,7 +2121,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "PH101", "courseName": "Basic Physics", "status": "ENROLLED" }
+      {
+        "courseId": "PH101",
+        "courseName": "Basic Physics",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-20T09:15:00Z",
     "updatedAt": "2024-01-20T09:15:00Z"
@@ -1544,7 +2140,11 @@
     "sex": "MALE",
     "status": "ACTIVE",
     "enrollments": [
-      { "courseId": "CS101", "courseName": "Introduction to Computer Science", "status": "ENROLLED" }
+      {
+        "courseId": "CS101",
+        "courseName": "Introduction to Computer Science",
+        "status": "ENROLLED"
+      }
     ],
     "createdAt": "2024-01-20T10:00:00Z",
     "updatedAt": "2024-01-20T10:00:00Z"
